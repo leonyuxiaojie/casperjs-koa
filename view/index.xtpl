@@ -1,0 +1,20 @@
+{{extend ("./layout/layout")}}
+
+{{#block ("head")}}
+    <style>
+
+    </style>
+{{/block}}
+
+{{#block ("body")}}
+	<div class="wrapper">
+		<p class='title'>请输入您的网址</p>
+		<input class='address-txt' type='text' placeholder='default' value='http://30.17.169.198:8888/'/>
+		<button class="submit">提交</button>
+		<div class="tip"> </div>
+		<div class='result'>测试结果: {{nick}}</div>
+	</div>
+	<script text="text/javascript" src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+	<script type="text/javascript" src="/index.js"></script>
+
+{{/block}}
